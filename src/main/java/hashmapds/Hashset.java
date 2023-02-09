@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 public class Hashset {
 	public static void main(String []args) {
-		Logger log=Logger.getLogger("hi");
+		Logger l=Logger.getLogger("hi");
 		Scanner scan=new Scanner(System.in);
 		HashSet<Integer> set=new HashSet();
 		set.add(10);
@@ -18,18 +18,18 @@ public class Hashset {
 		
 		Iterator<Integer> it=set.iterator();
 		while(it.hasNext()) {
-			System.out.println(it.next());
+			l.log(Level.INFO,()->" " +it.next());
 		}
 		
-		log.info("set cannot allowed dublicate element");
-		log.info("Enter search Element");
+		l.info("set cannot allowed dublicate element");
+		l.info("Enter search Element");
 		int search=scan.nextInt();
 		if(set.contains(search)) {
-			log.info("Element is found");
+			l.info("Element is found");
 		}
 		else
 		{
-			log.info("Element is not found");
+			l.info("Element is not found");
 		}
 		}
 		
