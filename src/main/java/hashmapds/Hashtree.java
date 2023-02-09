@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Hashtree {
+public class Treeset {
 	public static void main(String []args) {
 		TreeSet<Integer> ts=new TreeSet<>();
 		Logger l=Logger.getLogger(" ");
