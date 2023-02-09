@@ -9,7 +9,7 @@ public class Hashset {
 	public static void main(String []args) {
 		Logger l=Logger.getLogger("hi");
 		Scanner scan=new Scanner(System.in);
-		HashSet<Integer> set=new HashSet();
+		HashSet<Integer> set=new HashSet<>();
 		set.add(10);
 		set.add(20);
 		set.add(30);
